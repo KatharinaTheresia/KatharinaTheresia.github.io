@@ -12,12 +12,13 @@ body {
 div.mycontainer {
     width: 100%;
     overflow: auto;
+    display: flex;
 }
 
 div.mycontainer div {
-    width: calc(100% / 3); /* Set width dynamically to occupy one-third of the container's width */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    float: left;
+    flex: 1;
+    width: calc(100% / 3);
+    box-sizing: border-box;
 }
 
 .work {
